@@ -123,12 +123,24 @@
     position:relative;
   }
   .logo{ display:flex; align-items:center; gap:10px; font-weight:800; font-size:15px; }
-  .logo .orb{
-    width:18px; height:18px; border-radius:50%;
-    background:radial-gradient(circle at 30% 30%, #C8FFDF, var(--green) 40%, var(--green-2) 100%);
-    box-shadow:0 0 14px var(--glow);
+.logo-avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
     flex-shrink:0;
-  }
+
+    border:2px solid rgba(124,255,176,.18);
+
+    box-shadow:0 0 18px rgba(124,255,176,.25);
+
+    transition:all .3s ease;
+}
+
+.logo-avatar:hover{
+    transform:scale(1.06);
+    box-shadow:0 0 30px rgba(124,255,176,.45);
+}
   .logo span{ font-family:'JetBrains Mono',monospace; font-weight:500; font-size:11px; color:var(--muted); }
 
   .nav-links{ display:flex; align-items:center; gap:4px; }
