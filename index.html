@@ -122,13 +122,14 @@
     -webkit-backdrop-filter:blur(20px);
     position:relative;
   }
-  .logo{ display:flex; align-items:center; gap:10px; font-weight:800; font-size:15px; }
-  .logo .orb{
-    width:18px; height:18px; border-radius:50%;
-    background:radial-gradient(circle at 30% 30%, #C8FFDF, var(--green) 40%, var(--green-2) 100%);
-    box-shadow:0 0 14px var(--glow);
-    flex-shrink:0;
-  }
+  .logo-avatar{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+  flex-shrink:0;
+}
   .logo span{ font-family:'JetBrains Mono',monospace; font-weight:500; font-size:11px; color:var(--muted); }
 
   .nav-links{ display:flex; align-items:center; gap:4px; }
@@ -809,7 +810,10 @@
 
   <div class="foot-grid">
     <div class="foot-col">
-      <div class="foot-brand"><img src="avatar.png" class="logo-avatar" alt="">Кирилл <span>/ Preview Design</span></div>
+      <div class="foot-brand">
+    <img src="avatar.png" class="footer-avatar" alt="">
+    Кирилл <span>/ Preview Design</span>
+</div>
       <p>Дизайн YouTube-превью, которые останавливают скролл и получают клик. Работаю с блогерами и каналами любого масштаба с 2021 года.</p>
     </div>
     <div class="foot-col">
